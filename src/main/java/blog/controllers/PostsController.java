@@ -28,13 +28,18 @@ public class PostsController {
         return "posts/view";
     }
 
-    public String view(@PathVariable("id") Long id) {
-        if(!form_has error) {
-            notificationService.addErrorMessage("hfhfls");
-        }
-        if(pos)
-        Post p = postService.findById(id);
-        PostForm --> put -> p;
+    public String editView(@PathVariable("id") Long id) {
+        //TODO: edit View
         return "posts/edit";
+    }
+
+    public String createNewPost() {
+        //TODO: create View
+        return "posts/create";
+    }
+
+    public String deletePost() {
+        //TODO: create View
+        return "posts/id";
     }
 }
